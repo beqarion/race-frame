@@ -6,108 +6,239 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js"></script>
+
 </head>
 
 <body>
-  <!-- nav -->
-  <nav class="nav">
-    <div class="center nav-center">
-      <div class="nav-buttons">
-        <button class="btn to-garage-btn">to garage</button>
-        <button class="btn to-winners-btn">to winners</button>
+  <div class="container">
+    <!-- nav -->
+    <nav class="nav">
+      <div class="center nav-center">
+        <div class="nav-buttons">
+          <button class="btn to-garage-btn">to garage</button>
+          <button class="btn to-winners-btn">to winners</button>
+        </div>
       </div>
-    </div>
-  </nav>
-  <article class="garage">
-    <div class="center garage-center">
-      <!-- controls -->
-      <section class="garage-controls">
-        <form class="garage-control-form">
-          <!-- create -->
-          <div class="input-container create-container">
-            <input type="text">
-            <input type="color">
-            <input type="button" value="create">
+    </nav>
+    <!-- garage -->
+    <article class="garage" style="">
+      <div class="center garage-center">
+        <!-- controls -->
+        <section class="garage-controls">
+          <form class="garage-controls-form">
+            <!-- create -->
+            <div class="input-container create-container">
+              <input type="text">
+              <input type="color">
+              <button class="btn create-car" type="button">create</button>
+            </div>
+            <!-- update -->
+            <div class="input-container update-container">
+              <input type="text">
+              <input type="color">
+              <button class="btn update-car" type="button">update</button>
+            </div>
+          </form>
+          <div class="garage-controls-buttons">
+            <button class="btn garage-control-race">race</button>
+            <button class="btn garage-control-reset">reset</button>
+            <button class="btn garage-control-generate">generate cars</button>
           </div>
-          <!-- update -->
-          <div class="input-container update-container">
-            <input type="text">
-            <input type="color">
-            <input type="button" value="update">
-          </div>
-        </form>
-      </section>
+        </section>
 
 
-      <!-- tracks content -->
-      <section class="tracks-section">
-        <div class="tracks-heading">
-          <h2>garage <span>(6)</span></h2>
-          <h3>page #1</h3>
+        <!-- tracks content -->
+        <section class="tracks-section">
+          <div class="tracks-heading">
+            <h2 class="tracks-title">garage <span class="car-quantity">(6)</span></h2>
+            <h3 class="tracks-subtitle">page #<span class="page-num">1</span></h3>
+          </div>
+          <div class="tracks">
+            <!-- single track -->
+            <div class="track" style="border-bottom: 1px dashed grey;">
+              <div class="track-controls">
+                <button class="btn track-select">select</button>
+                <button class="btn track-remove">remove</button>
+                <span>Tesla</span>
+              </div>
+
+              <div class="car-controls">
+                <button class="car-A">a</button>
+                <button class="car-B">b</button>
+              </div>
+              <!-- car -->
+              <div class="car">
+                <img src="/src/assets/car.svg" alt="a car">
+              </div>
+              <!-- flag -->
+              <div class="flag">
+                <img src="/src/assets/flag-checkered.svg" alt="a flag">
+              </div>
+            </div>
+            <!-- end of single track -->
+            <!-- single track -->
+            <div class="track" style="border-bottom: 1px dashed grey;">
+              <div class="track-controls">
+                <button class="btn track-select">select</button>
+                <button class="btn track-remove">remove</button>
+                <span>Tesla</span>
+              </div>
+
+              <div class="car-controls">
+                <button class="car-A">a</button>
+                <button class="car-B">b</button>
+              </div>
+              <!-- car -->
+              <div class="car">
+                <img src="/src/assets/car.svg" alt="a car">
+              </div>
+              <!-- flag -->
+              <div class="flag">
+                <img src="/src/assets/flag-checkered.svg" alt="a flag">
+              </div>
+            </div>
+            <!-- end of single track -->
+            <!-- single track -->
+            <div class="track" style="border-bottom: 1px dashed grey;">
+              <div class="track-controls">
+                <button class="btn track-select">select</button>
+                <button class="btn track-remove">remove</button>
+                <span>Tesla</span>
+              </div>
+
+              <div class="car-controls">
+                <button class="car-A">a</button>
+                <button class="car-B">b</button>
+              </div>
+              <!-- car -->
+              <div class="car">
+                <img src="/src/assets/car.svg" alt="a car">
+              </div>
+              <!-- flag -->
+              <div class="flag">
+                <img src="/src/assets/flag-checkered.svg" alt="a flag">
+              </div>
+            </div>
+            <!-- end of single track -->
+            <!-- single track -->
+            <div class="track" style="border-bottom: 1px dashed grey;">
+              <div class="track-controls">
+                <button class="btn track-select">select</button>
+                <button class="btn track-remove">remove</button>
+                <span>Tesla</span>
+              </div>
+
+              <div class="car-controls">
+                <button class="car-A">a</button>
+                <button class="car-B">b</button>
+              </div>
+              <!-- car -->
+              <div class="car">
+                <img src="/src/assets/car.svg" alt="a car">
+              </div>
+              <!-- flag -->
+              <div class="flag">
+                <img src="/src/assets/flag-checkered.svg" alt="a flag">
+              </div>
+            </div>
+            <!-- end of single track -->
+            <!-- single track -->
+            <div class="track" style="border-bottom: 1px dashed grey;">
+              <div class="track-controls">
+                <button class="btn track-select">select</button>
+                <button class="btn track-remove">remove</button>
+                <span>Tesla</span>
+              </div>
+
+              <div class="car-controls">
+                <button class="car-A">a</button>
+                <button class="car-B">b</button>
+              </div>
+              <!-- car -->
+              <div class="car">
+                <img src="/src/assets/car.svg" alt="a car">
+              </div>
+              <!-- flag -->
+              <div class="flag">
+                <img src="/src/assets/flag-checkered.svg" alt="a flag">
+              </div>
+            </div>
+            <!-- end of single track -->
+          </div>
+        </section>
+      </div>
+    </article>
+    <!-- winners -->
+    <article class="winners" style="display: none;">
+      <div class="center winner-center">
+
+        <div class="winners-heading">
+          <h2 class="winners-title">winners <span class="car-quantity">(3)</span></h2>
+          <h3 class="winners-subtitle">page #<span class="page-num">1</span></h3>
         </div>
-        <div class="tracks">
-          <!-- single track -->
-          <div class="track" style="border-bottom: 1px dashed grey;">
-            <div class="track-controls">
-              <button class="track-select">select</button>
-              <button class="track-remove">remove</button>
-              <span>Tesla</span>
-            </div>
-            <div class="car-container">
-              <div class="car-controls">
-                <button class="car-A">a</button>
-                <button class="car-A">b</button>
-              </div>
-              <div class="car">
-                <img src="./car.svg" alt="a car">
-              </div>
-            </div>
+        <table class="winners-data">
+          <thead>
+            <tr>
+              <th>Number</th>
+              <th>Car</th>
+              <th>Name</th>
+              <th>wins</th>
+              <th>Best time (seconds)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- single row -->
+            <tr>
+              <td>1</td>
+              <td>
+                <div class="winner-img"><img class="img" src="/src/assets/car.svg" alt=""
+                    style="filter: brightness(0) invert(100%); width:50px"></div>
+              </td>
+              <td>Tesla</td>
+              <td>1</td>
+              <td>10</td>
+            </tr>
+            <!-- end of single row -->
+            <!-- single row -->
+            <tr>
+              <td>1</td>
+              <td>
+                <div class="winner-img"><img class="img" src="/src/assets/car.svg" alt=""
+                    style="filter: brightness(0) invert(100%); width:50px"></div>
+              </td>
+              <td>Tesla</td>
+              <td>1</td>
+              <td>10</td>
+            </tr>
+            <!-- end of single row -->
+            <!-- single row -->
+            <tr>
+              <td>1</td>
+              <td>
+                <div class="winner-img"><img class="img" src="/src/assets/car.svg" alt=""
+                    style="filter: brightness(0) invert(100%); width:50px"></div>
+              </td>
+              <td>Tesla</td>
+              <td>1</td>
+              <td>10</td>
+            </tr>
+            <!-- end of single row -->
+          </tbody>
+        </table>
 
-          </div>
-          <!-- end of single track -->
-           <!-- single track -->
-          <div class="track" style="border-bottom: 1px dashed grey;">
-            <div class="track-controls">
-              <button class="track-select">select</button>
-              <button class="track-remove">remove</button>
-              <span>Tesla</span>
-            </div>
-            <div class="car-container">
-              <div class="car-controls">
-                <button class="car-A">a</button>
-                <button class="car-A">b</button>
-              </div>
-              <div class="car">
-                <img src="./car.svg" alt="a car">
-              </div>
-            </div>
-
-          </div>
-          <!-- end of single track -->
-           <!-- single track -->
-          <div class="track" style="border-bottom: 1px dashed grey;">
-            <div class="track-controls">
-              <button class="track-select">select</button>
-              <button class="track-remove">remove</button>
-              <span>Tesla</span>
-            </div>
-            <div class="car-container">
-              <div class="car-controls">
-                <button class="car-A">a</button>
-                <button class="car-A">b</button>
-              </div>
-              <div class="car">
-                <img src="./car.svg" alt="a car">
-              </div>
-            </div>
-
-          </div>
-          <!-- end of single track -->
+      </div>
+    </article>
+    <!-- footer -->
+    <nav class="pagination">
+      <div class="center pagination-center">
+        <div class="pagination-buttons">
+          <button class="btn prev">prev</button>
+          <button class="btn next">next</button>
         </div>
-      </section>
-    </div>
-  </article>
+      </div>
+    </nav>
+  </div>
+  <script type="module" src="/src/main.js"></script>
 </body>
 
 
