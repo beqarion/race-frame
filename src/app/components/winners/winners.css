@@ -1,0 +1,32 @@
+/*
+===============
+Winners View
+===============
+*/
+.winners-heading {
+  display: grid;
+  gap: 1rem;
+}
+.winners-data {
+  margin-top: 1rem;
+  border-collapse: collapse;
+
+  thead {
+    background: rgb(20, 119, 173);
+  }
+  th {
+    text-align: start;
+  }
+  th,
+  td {
+    padding: 0.25rem 0.5rem;
+  }
+  .winner-img {
+    height: 20px;
+    .img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

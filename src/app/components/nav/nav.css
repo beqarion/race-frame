@@ -1,0 +1,21 @@
+/*
+=============== 
+Navigation
+===============
+*/
+.nav {
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+}
+.nav-buttons {
+  display: flex;
+  gap: 0.25rem;
+  .btn {
+    background-color: hsl(120, 48%, 88%);
+    box-shadow: 0 4px 0 hsl(120, 68%, 54%);
+    &:active {
+      transform: translateY(4px);
+      box-shadow: 0 2px 0 hsl(120, 68%, 54%);
+    }
+  }
+}

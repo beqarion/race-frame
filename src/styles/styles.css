@@ -1,0 +1,68 @@
+/*
+===============
+Variables
+===============
+*/
+
+:root {
+  --clr-white: #fff;
+  --clr-black: #222;
+  --ff-primary: "Raleway", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+  --transition: all 0.05s linear;
+  --max-width: 95vw;
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--ff-secondary);
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  border: none;
+  background-color: white;
+}
+
+/* global classes */
+.center {
+  max-width: 95vw;
+  margin: 0 auto;
+}
+.btn {
+  padding: 0.25rem 0.75rem;
+  min-width: 70px;
+  border-radius: 0.25rem;
+  background-color: hsl(228, 48%, 88%);
+  box-shadow: 0 4px 0 hsl(228, 68%, 54%);
+
+  transition: var(--transition);
+  user-select: none;
+}
+.btn:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #3a5bd9;
+}
+*:disabled {
+  filter: saturate(0) brightness(1.1);
+  transform: none !important;
+  opacity: 0.7;
+  pointer-events: none;
+}

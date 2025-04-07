@@ -1,0 +1,63 @@
+/*
+=============== 
+Garage Controls
+===============
+*/
+.garage-controls {
+  padding: 1rem 0;
+  display: grid;
+  gap: 0.5rem;
+  max-width: 18.75rem;
+}
+
+.garage-controls-form {
+  display: grid;
+  gap: 0.5rem;
+  max-width: 320px;
+  .input-container {
+    display: flex;
+    gap: 0.25rem;
+    input[type="text"] {
+      flex-grow: 1;
+      flex-shrink: 1;
+    }
+    input {
+      border-radius: 0.25rem;
+      border: none;
+      outline: none;
+      &[type="text"] {
+        padding: 0 0.5rem;
+      }
+    }
+  }
+}
+.garage-controls-buttons {
+  display: flex;
+  gap: 0.25rem;
+  .garage-control-race,
+  .garage-control-reset {
+    background-color: hsl(120, 48%, 88%);
+    box-shadow: 0 4px 0 hsl(120, 68%, 54%);
+    &:active {
+      transform: translateY(4px);
+      box-shadow: 0 2px 0 hsl(120, 68%, 54%);
+    }
+  }
+  .btn {
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+}
+/*
+===============
+Tracks Section
+===============
+*/
+.tracks-section {
+  margin-top: 3.5rem;
+}
+.tracks-heading {
+  display: grid;
+  gap: 1rem;
+}
+
