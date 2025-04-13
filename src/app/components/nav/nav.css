@@ -8,6 +8,7 @@ Navigation
   margin-bottom: 1rem;
 }
 .nav-buttons {
+  color: var(--clr-black);
   display: flex;
   gap: 0.25rem;
   .btn {

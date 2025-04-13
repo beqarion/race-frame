@@ -3,8 +3,15 @@ import { createNavbar } from "./components/nav/nav.js";
 import { pagination } from "./components/pagination/pagination.js";
 import { winners } from "./components/winners/winners.js";
 
-const container = document.querySelector(".container");
-console.log(container);
+import { router } from "./services/router.js";
 
-container.replaceChildren(createNavbar());
-container.append(garage(), winners(), pagination());
+const container = document.querySelector(".container");
+container.replaceChildren();
+
+const view = document.createElement("div");
+const routes = { garage: garage(), winners: winners() };
+view.append(routes[window.location.hash.substring(1)] || routes.garage);
+
+router(routes, view);
+
+container.append(createNavbar(), view, pagination());

@@ -15,7 +15,6 @@ export const garage = () => {
 
   center.append(controls, tracksSection);
   garage.append(center);
-  garage.hidden = true;
 
   return garage;
 };
