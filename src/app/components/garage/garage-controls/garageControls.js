@@ -5,6 +5,5 @@ export const garageControls = () => {
   const controlContainer = document.createElement("section");
   controlContainer.className = "garage-controls";
 
-  controlContainer.append(controlsForm(), controlButtons());
   return controlContainer;
 };

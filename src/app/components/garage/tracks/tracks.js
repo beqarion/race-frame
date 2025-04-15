@@ -1,6 +1,4 @@
-import { singleTrack } from "./single-track/singleTrack";
-
-export const tracks = () => {
+export const tracks = (quantity, pageN) => {
   const tracksSection = document.createElement("section");
   tracksSection.className = "tracks-section";
 
@@ -12,7 +10,7 @@ export const tracks = () => {
   title.textContent = "garage ";
   const carQuant = document.createElement("span");
   carQuant.className = "car-quantity";
-  carQuant.textContent = "(6)";
+  carQuant.textContent = quantity;
   title.append(carQuant);
 
   const subTitle = document.createElement("h3");
@@ -28,9 +26,7 @@ export const tracks = () => {
   const tracks = document.createElement("div");
   tracks.className = "tracks";
 
-  tracks.append(singleTrack(), singleTrack());
-
   tracksSection.append(tracksHeading, tracks);
 
-  return tracksSection;
+  return { element: tracksSection, tracksContainer: tracks };
 };

@@ -1,10 +1,12 @@
 import carUrl from "../../../../../assets/images/car.svg";
 import flagUrl from "../../../../../assets/images/flag-checkered.svg";
+import { carImg } from "../../../../utils/carImgCreator";
 
-import "./singleTrack.css"
+import "./singleTrack.css";
 
-export const singleTrack = () => {
+export const singleTrack = ({ name, color, id }) => {
   const track = document.createElement("div");
+  track.setAttribute("data-id", id);
   track.className = "track";
 
   const trackControls = document.createElement("div");
@@ -19,7 +21,7 @@ export const singleTrack = () => {
   removeButton.textContent = "remove";
 
   const trackName = document.createElement("span");
-  trackName.textContent = "Tesla";
+  trackName.textContent = name;
 
   trackControls.append(selectButton, removeButton, trackName);
 
@@ -39,11 +41,7 @@ export const singleTrack = () => {
   const car = document.createElement("div");
   car.className = "car";
 
-  const carImage = document.createElement("img");
-  carImage.src = carUrl;
-  carImage.alt = "a car";
-
-  car.append(carImage);
+  car.innerHTML = carImg(color);
 
   const flag = document.createElement("div");
   flag.className = "flag";
