@@ -12,7 +12,7 @@ export class Tracks {
   }
   render() {
     this.parent.cars.forEach((car) => {
-      const singleTrack = new SingleTrack(car, this.parent);
+      const singleTrack = new SingleTrack(car, this);
       this.tracksContainer.append(singleTrack.element);
       this.singleTracks.push(singleTrack);
     });

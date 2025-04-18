@@ -14,12 +14,14 @@ export class ControlButtons {
   #bindEvents() {
     const generateCars = this.element.querySelector(".garage-control-generate");
     generateCars.addEventListener("click", async () => {
+      const arrayPromises = [];
       for (let i = 0; i < 100; i += 1) {
         const color = randomHexColor();
         const name = generateCarName();
 
-        await garageAPI.createCar({ name, color });
+        arrayPromises.push(garageAPI.createCar({ name, color }));
       }
+      await Promise.allSettled(arrayPromises);
       await this.parent.parent.initialize();
     });
   }

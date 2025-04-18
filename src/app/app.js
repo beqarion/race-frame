@@ -5,6 +5,7 @@ import { winners } from "./components/winners/winners.js";
 import { router } from "./services/router.js";
 
 import { Garage } from "./classes/Garage/Garage.js";
+import { underConstruction } from "./components/modal/under-construction.js";
 
 const container = document.querySelector(".container");
 container.replaceChildren();
@@ -16,4 +17,4 @@ const routes = { garage: Garage, winners: winners() };
 
 router(routes, view);
 
-container.append(createNavbar(), view);
+container.append(createNavbar(), view, underConstruction());
